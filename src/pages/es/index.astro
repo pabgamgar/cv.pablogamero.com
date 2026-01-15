@@ -1,0 +1,190 @@
+---
+import Layout from "../../layouts/Layout.astro";
+---
+
+<Layout
+    lang="es"
+    title="CV de Pablo Gamero"
+    canon="https://cv.pablogamero.com/es"
+    alt="https://cv.pablogamero.com"
+    desc="CV"
+    kw="CV, Currículum Vitae, Currículum, Curriculum"
+    subtitle="Desarrollador de software enfocado en resolver problemas específicos para empresas y personas"
+>
+    <div class="w-full lg:w-2/3 h-fit flex flex-col gap-8">
+        <div id="professional-exp" class="flex flex-col gap-3">
+            <h2>Resumen Profesional</h2>
+            <p>
+                Estudiante de 4º de Ingeniería Informática con experiencia en
+                desarrollo de software web y aplicaciones móviles, enfocado en
+                crear soluciones que resuelven problemas específicos de empresas
+                y personas.
+            </p>
+        </div>
+        <div id="work-exp" class="flex flex-col gap-3">
+            <h2>Experiencia Laboral</h2>
+            <div class="flex flex-col gap-0.5">
+                <h3>
+                    Desarrollador Freelance · <span class="bold"
+                        >Red Española de Esclerosis Múltiple</span
+                    >
+                    <span class="date">2023 – Actualidad</span>
+                </h3>
+                <ul>
+                    <li>
+                        Desarrollo y mantenimiento de la web pública (reem.es),
+                        creando una plataforma informativa sobre los proyectos
+                        de investigación de la red.
+                    </li>
+                    <li>
+                        Diseño y desarrollo de la web privada
+                        (miembros.reem.es), utilizada como centro de información
+                        para equipos de investigación a nivel nacional.
+                    </li>
+                    <li>
+                        Actúo como único desarrollador, gestionando el ciclo
+                        completo.
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="projects" class="flex flex-col gap-3">
+            <h2>Proyectos</h2>
+            <div class="flex flex-col gap-0.5">
+                <h3>
+                    <span class="bold">Dibs</span> · App de finanzas personales <span
+                        class="date">2025</span
+                    >
+                </h3>
+                <ul>
+                    <li>
+                        Aplicación móvil para gestionar deudas de manera simple,
+                        con recordatorios y seguimiento visual del progreso.
+                    </li>
+                    <li>
+                        Diseñada para ayudar a usuarios a tener control
+                        financiero en su día a día
+                    </li>
+                    <li>Stack: Flutter.</li>
+                </ul>
+            </div>
+            <div class="flex flex-col gap-0.5">
+                <h3>
+                    <span class="bold">Pubmefy</span> · SaaS para investigadores <span
+                        class="date">2024 – En desarrollo</span
+                    >
+                </h3>
+                <ul>
+                    <li>
+                        Herramienta para automatizar la creación y actualización
+                        de CVs científicos en formatos oficiales (CVA, CVN).
+                    </li>
+                    <li>
+                        Incluye web app y extensión de Chrome para autocompletar
+                        formularios del FECYT.
+                    </li>
+                    <li>Stack: React, Supabase, Chrome Extensions API.</li>
+                </ul>
+            </div>
+            <div class="flex flex-col gap-0.5">
+                <h3>
+                    <span class="bold">DayKeeper</span> · App de journaling inteligente
+                    <span class="date">2025 – En desarrollo</span>
+                </h3>
+                <ul>
+                    <li>
+                        Aplicación de diario personal que permite registrar
+                        entradas y hacer preguntas a la IA (“¿Qué hice la semana
+                        pasada?”).
+                    </li>
+                    <li>Desarrollada con iOS (Swift, Core Data, CloudKit).</li>
+                    <li>
+                        Inspirada en Apple Journal, con funcionalidades de
+                        análisis de estado de ánimo y hábitos.
+                    </li>
+                </ul>
+            </div>
+            <div class="flex flex-col gap-0.5">
+                <h3>
+                    <span class="bold">Omnia</span> · Consultoría tecnológica <span
+                        class="date">2024 – En desarrollo</span
+                    >
+                </h3>
+                <ul>
+                    <li>
+                        Startup enfocada en identificar problemas diarios de
+                        empresas pequeñas y proponer soluciones digitales.
+                    </li>
+                    <li>
+                        Proyectos de desarrollo web, automatización y estrategia
+                        en redes sociales.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="w-1/3 h-fit flex flex-col gap-8">
+        <div id="skills" class="flex flex-col gap-3">
+            <h2>Skills</h2>
+            <div class="flex flex-col gap-0.5">
+                <h3 class="bold">Lenguajes de Programación</h3>
+                <p>Python, Java, JavaScript, TypeScript, HTML, CSS, SQL</p>
+            </div>
+            <div class="flex flex-col gap-0.5">
+                <h3 class="bold">Frameworks y Librerías</h3>
+                <p>React, Next.js, Flutter, Astro, React Native</p>
+            </div>
+            <div class="flex flex-col gap-0.5">
+                <h3 class="bold">Bases de datos y Cloud</h3>
+                <p>Firebase, Supabase, MySQL, PostgreSQL, MariaDB</p>
+            </div>
+            <div class="flex flex-col gap-0.5">
+                <h3 class="bold">Herramientas y Plataformas</h3>
+                <p>Git, GitHub, Docker, Vercel, CLoudflare, WordPress, Figma</p>
+            </div>
+        </div>
+        <div id="languages" class="flex flex-col gap-3">
+            <h2>Idiomas</h2>
+            <p><span class="bold"> Español </span> – Nativo</p>
+            <p><span class="bold">Inglés</span> – C1 (CAE)</p>
+            <p><span class="bold">Francés</span> – B2 (DELF)</p>
+        </div>
+        <div id="education" class="flex flex-col gap-3">
+            <h2>Educación</h2>
+            <div class="flex flex-col gap-0.5">
+                <h3 class="bold">
+                    Escuela Superior de Ingeniería Informática (ETSII),
+                    Universidad de Sevilla <span class="date"
+                        >2022 – Actualidad</span
+                    >
+                </h3>
+                <p>
+                    Grado en Ingeniería Informática – Tecnologías Informáticas
+                </p>
+            </div>
+            <div class="flex flex-col gap-0.5">
+                <h3 class="bold">
+                    École Polytechnique Fédérale de Lausanne (EPFL), Suiza<span
+                        class="date">2020 – 2022</span
+                    >
+                </h3>
+                <p>
+                    Grado en Informática <span class="italic"
+                        >(no finalizado, traslado a la Universidad de Sevilla)</span
+                    >
+                </p>
+            </div>
+            <div class="flex flex-col gap-0.5">
+                <h3 class="bold">
+                    Colegio Internacional San Francisco de Paula, Sevilla<span
+                        class="date">2018 – 2020</span
+                    >
+                </h3>
+                <p>
+                    Bachillerato Internacional – Ingeniería y Arquitectura
+                    Bachillerato Nacional – Ingeniería y Arquitectura
+                </p>
+            </div>
+        </div>
+    </div>
+</Layout>
