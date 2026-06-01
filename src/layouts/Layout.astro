@@ -1,5 +1,6 @@
 ---
 import "../styles/global.css";
+import packageJson from "../../package.json";
 
 interface Props {
     title: string;
@@ -11,6 +12,7 @@ interface Props {
     subtitle: string;
 }
 const { lang = "en", title, desc, kw, canon, alt, subtitle } = Astro.props;
+const version = packageJson.version;
 ---
 
 <html lang={lang}>
@@ -20,7 +22,10 @@ const { lang = "en", title, desc, kw, canon, alt, subtitle } = Astro.props;
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="author" content="Pablo Gamero García" />
         <meta name="language" content={lang} />
-        <meta name="robots" content="index, follow" />
+        <meta
+            name="robots"
+            content="noindex, nofollow, noarchive, nosnippet, noimageindex"
+        />
         <link
             id="favicon"
             rel="icon"
@@ -99,6 +104,7 @@ const { lang = "en", title, desc, kw, canon, alt, subtitle } = Astro.props;
                 <div class="w-full h-full flex flex-col lg:flex-row gap-12">
                     <slot />
                 </div>
+                <p class="text-xs text-neutral-400 self-end">v{version}</p>
             </div>
         </main>
     </body>
