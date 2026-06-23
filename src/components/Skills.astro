@@ -1,0 +1,19 @@
+---
+import type { SkillCategory } from "../data/cv";
+
+interface Props {
+    heading: string;
+    categories: SkillCategory[];
+}
+const { heading, categories } = Astro.props;
+---
+
+<div id="skills" class="flex flex-col gap-3">
+    <h2>{heading}</h2>
+    {categories.map((cat) => (
+        <div class="flex flex-col gap-0.5">
+            <h3 class="bold">{cat.category}</h3>
+            <p set:html={cat.items} />
+        </div>
+    ))}
+</div>

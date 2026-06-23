@@ -1,0 +1,16 @@
+---
+import type { LanguageEntry } from "../data/cv";
+
+interface Props {
+    heading: string;
+    entries: LanguageEntry[];
+}
+const { heading, entries } = Astro.props;
+---
+
+<div id="languages" class="flex flex-col gap-3">
+    <h2>{heading}</h2>
+    {entries.map((entry) => (
+        <p><span class="bold">{entry.language}</span> – {entry.level}</p>
+    ))}
+</div>

@@ -1,0 +1,22 @@
+---
+import type { EducationEntry } from "../data/cv";
+
+interface Props {
+    heading: string;
+    entries: EducationEntry[];
+}
+const { heading, entries } = Astro.props;
+---
+
+<div id="education" class="flex flex-col gap-3">
+    <h2>{heading}</h2>
+    {entries.map((entry) => (
+        <div class="flex flex-col gap-0.5">
+            <h3 class="bold">
+                {entry.institution}
+                <span class="date">{entry.date}</span>
+            </h3>
+            <p set:html={entry.description + (entry.note ? ` <span class="italic">(${entry.note})</span>` : '')} />
+        </div>
+    ))}
+</div>

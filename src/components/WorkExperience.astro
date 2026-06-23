@@ -1,0 +1,26 @@
+---
+import type { WorkEntry } from "../data/cv";
+
+interface Props {
+    heading: string;
+    entries: WorkEntry[];
+}
+const { heading, entries } = Astro.props;
+---
+
+<div id="work-exp" class="flex flex-col gap-3">
+    <h2>{heading}</h2>
+    {entries.map((entry) => (
+        <div class="flex flex-col gap-0.5">
+            <h3>
+                {entry.role} · <span class="bold">{entry.company}</span>
+                <span class="date">{entry.date}</span>
+            </h3>
+            <ul>
+                {entry.bullets.map((bullet) => (
+                    <li set:html={bullet} />
+                ))}
+            </ul>
+        </div>
+    ))}
+</div>
