@@ -261,21 +261,21 @@ const projects: BilingualProject[] = [
   {
     name: "Pubmefy",
     en: {
-      tagline: "SaaS for researchers",
-      date: "2024 – In development",
+      tagline: "Scientific publication manager and CV builder",
+      date: "In development",
       bullets: [
         "Tool to automate the creation and updating of scientific CVs in official formats (CVA, CVN).",
         "Includes a web app and a Chrome extension to auto-complete FECYT forms.",
-        "<span class='bold'>Stack:</span> React, Supabase, Chrome Extensions API.",
+        "<span class='bold'>Stack:</span> Next.js, TypeScript, Clerk, Convex, Cloudflare (Workers).",
       ],
     },
     es: {
-      tagline: "SaaS para investigadores",
-      date: "2024 – En desarrollo",
+      tagline: "Gestor de publicaciones científicas y generador de CV",
+      date: "En desarrollo",
       bullets: [
-        "Herramienta para automatizar la creación y actualización de CVs científicos en formatos oficiales (CVA, CVN).",
-        "Incluye web app y extensión de Chrome para autocompletar formularios del FECYT.",
-        "<span class='bold'>Stack:</span> React, Supabase, Chrome Extensions API.",
+        "Aplicación web que convierte las publicaciones dispersas de un investigador en currículums académicos preparados para procesos de evaluación.",
+        "Importa publicaciones desde ORCID, PubMed, SciELO, BibTeX y RIS; detecta metadatos ausentes o sospechosos, como DOI, factores de impacto y cuartiles; y genera distintos CV adaptados a formatos específicos —FECYT, Vancouver y APA—, con exportación a DOCX, PDF, BibTeX y RIS.",
+        "<span class='bold'>Stack:</span> Next.js, TypeScript, Clerk, Convex, Cloudflare (Workers).",
       ],
     },
   },
